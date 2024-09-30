@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy eSports - Leaderboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Games</a>
+                    <div class="dropdown-content">
+                        <a href="call-of-duty.html">Call of Duty</a>
+                        <a href="csgo.html">CS:GO</a>
+                        <a href="valorant.html">Valorant</a>
+                    </div>
+                </li>
+                <li><a href="my-teams.html">My Teams</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Leaderboard</h1>
+        
+        <section id="leaderboard-filters">
+            <h2>Filters</h2>
+            <form id="filter-form">
+                <label for="game-filter">Game:</label>
+                <select id="game-filter" name="game-filter">
+                    <option value="all">All Games</option>
+                    <option value="cod">Call of Duty</option>
+                    <option value="csgo">CS:GO</option>
+                    <option value="valorant">Valorant</option>
+                </select>
+
+                <label for="time-period">Time Period:</label>
+                <select id="time-period" name="time-period">
+                    <option value="weekly">This Week</option>
+                    <option value="monthly">This Month</option>
+                    <option value="all-time">All Time</option>
+                </select>
+
+                <button type="submit">Apply Filters</button>
+            </form>
+        </section>
+
+        <section id="leaderboard-table">
+            <h2>Top Teams</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Team Name</th>
+                        <th>Game</th>
+                        <th>Manager</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>CS:GO Dominators</td>
+                        <td>CS:GO</td>
+                        <td>ProGamer123</td>
+                        <td>1250</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Valorant Victors</td>
+                        <td>Valorant</td>
+                        <td>TacticalMaster</td>
+                        <td>1180</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>CoD Crushers</td>
+                        <td>Call of Duty</td>
+                        <td>FragMachine</td>
+                        <td>1150</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Fantasy eSports. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

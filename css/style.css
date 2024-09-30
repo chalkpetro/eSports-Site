@@ -1,0 +1,183 @@
+/* Add these styles to your existing CSS or replace the existing styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.scoreboard {
+    background-color: #f8f8f8;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.score-item {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.sub-nav {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+
+.sub-nav .menu a {
+    color: #000;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styles for the team cards */
+.team-card {
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(50% - 10px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #ecf0f1;
+}
+
+.team-card button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.team-card button:hover {
+    background-color: #2980b9;
+}
+
+/* Styles for forms */
+form input[type="text"],
+form select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #27ae60;
+}
+
+/* Styles for the leaderboard table */
+#leaderboard-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#leaderboard-table th,
+#leaderboard-table td {
+    border: 1px solid #bdc3c7;
+    padding: 12px;
+    text-align: left;
+}
+
+#leaderboard-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+#leaderboard-table tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+#leaderboard-table tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-nav, .sub-nav .menu {
+        flex-direction: column;
+    }
+    
+    .nav-right {
+        margin-top: 10px;
+    }
+}
