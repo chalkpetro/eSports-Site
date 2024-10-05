@@ -1,3 +1,12 @@
+/**
+ * This file contains the code for the user profile page.
+ * It includes functionality for user login, signup, and profile display.
+ * It uses HTML, CSS, and JavaScript.
+ *  
+ * @author Nikolas J Petroff
+ * @version 1.0
+ * @since 10-04-2024
+ */
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('login');
     const signupForm = document.getElementById('signup');

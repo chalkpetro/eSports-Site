@@ -1,3 +1,13 @@
+/**
+ * This file contains the code for the team creation page.
+ * It includes functionality for creating a new team.
+ * It uses HTML, CSS, and JavaScript.
+ * 
+ * @author Nikolas J Petroff
+ * @version 1.0
+ * @since 10-04-2024
+ */
+
 // Sample player data (in a real application, this would come from a backend API)
 const players = {
     cod: ['Scump', 'Crimsix', 'Clayster', 'FormaL', 'Karma'],
