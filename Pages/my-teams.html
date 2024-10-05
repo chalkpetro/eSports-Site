@@ -30,23 +30,8 @@
         <h1>My Teams</h1>
         
         <section id="existing-teams">
-            <h2>Your Current Teams</h2>
-            <div class="team-list">
-                <div class="team-card">
-                    <h3>CS:GO Dominators</h3>
-                    <p>Game: CS:GO</p>
-                    <p>Players: s1mple, ZywOo, NiKo, electronic, ropz</p>
-                    <p>Points: 1250</p>
-                    <button>Edit Team</button>
-                </div>
-                <div class="team-card">
-                    <h3>Valorant Victors</h3>
-                    <p>Game: Valorant</p>
-                    <p>Players: TenZ, ScreaM, nAts, yay, Derke</p>
-                    <p>Points: 980</p>
-                    <button>Edit Team</button>
-                </div>
-            </div>
+            <h2>Your Teams</h2>
+            <div id="teams-container"></div>
         </section>
 
         <section id="create-team">
@@ -65,11 +50,7 @@
 
                 <label for="players">Select Players:</label>
                 <select id="players" name="players" multiple required>
-                    <!-- Options would be populated dynamically based on the selected game -->
-                    <option value="player1">Player 1</option>
-                    <option value="player2">Player 2</option>
-                    <option value="player3">Player 3</option>
-                    <!-- Add more player options -->
+                    <!-- Options will be populated dynamically -->
                 </select>
 
                 <button type="submit">Create Team</button>
@@ -82,5 +63,6 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/team-creation.js"></script>
 </body>
 </html>

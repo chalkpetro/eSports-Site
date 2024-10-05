@@ -10,8 +10,8 @@ body {
 }
 
 header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #333;
+    padding: 10px 0;
 }
 
 .scoreboard {
@@ -31,12 +31,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     background-color: #000;
     color: #fff;
 }
 
 .logo {
+    color: #fff;
     font-size: 24px;
     font-weight: bold;
 }
@@ -46,21 +49,70 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu li {
-    margin: 0 10px;
+    margin: 0 1rem;
+    position: relative;
 }
 
 .menu a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
 }
 
 .nav-right a {
     color: #fff;
     text-decoration: none;
     margin-left: 15px;
+}
+
+.user-icon {
+    font-size: 1.2em;
 }
 
 .sub-nav {
@@ -180,4 +232,66 @@ form button:hover {
     .nav-right {
         margin-top: 10px;
     }
+}
+
+.team-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.team-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Add these styles to your existing CSS */
+
+#profile-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#login-form, #signup-form, #user-profile {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#login-form h2, #signup-form h2, #user-profile h2 {
+    margin-top: 0;
+}
+
+#login-form form, #signup-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form input, #signup-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#login-form button, #signup-form button, #logout-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login-form button:hover, #signup-form button:hover, #logout-button:hover {
+    background-color: #2980b9;
+}
+
+#profile-picture {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
 }
