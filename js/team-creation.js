@@ -8,6 +8,7 @@
  * @since 10-04-2024
  */
 
+//*****example [players, need to automate in the future to grab from the game itself]*****
 // Sample player data (in a real application, this would come from a backend API)
 const players = {
     cod: ['Scump', 'Crimsix', 'Clayster', 'FormaL', 'Karma'],
